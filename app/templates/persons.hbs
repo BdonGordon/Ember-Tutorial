@@ -1,0 +1,11 @@
+{{!--The way to get to this route is by the url: localhost:4200/persons --}}
+{{!--The data that will be displayed --}}
+<h3>The persons that are in this party ...</h3>
+<ul>
+  {{#each model as |person|}}
+    <li>{{person}}</li>
+  {{/each}}
+
+</ul>
+
+{{outlet}}
