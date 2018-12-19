@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "description": "Small description for ember-tutorial goes here",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BdonGordon/Ember-Tutorial.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Brandon Gordon",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -47,5 +49,10 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
-  }
+  },
+  "main": ".eslintrc.js",
+  "bugs": {
+    "url": "https://github.com/BdonGordon/Ember-Tutorial/issues"
+  },
+  "homepage": "https://github.com/BdonGordon/Ember-Tutorial#readme"
 }

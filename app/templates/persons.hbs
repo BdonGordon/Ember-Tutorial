@@ -2,6 +2,8 @@
 {{!--The data that will be displayed --}}
 <h3>The persons that are in this party ...</h3>
 <ul>
+
+  {{!Here, we are turning the array of string from model into HTML. 'each' loops over each item provided from the model() }}
   {{#each model as |person|}}
     <li>{{person}}</li>
   {{/each}}
