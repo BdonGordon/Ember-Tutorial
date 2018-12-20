@@ -2,10 +2,30 @@
   <div class="right tomster"></div>
   <h2>Welcome</h2>
   <p>We hope you find the whip you are looking for</p>
-
   {{#link-to "about" class="button"}}
     About Us
   {{/link-to}}
 </div>
+
+{{!-- Here, we are looping through the rentals' model that was defined in the rentals.js--}}
+{{#each model as |car|}}
+  <article class="listing">
+    <div class="details">
+      <h3>{{car.title}}</h3>
+      <div class="detail-company">
+        <span>Company:</span> {{car.company}}
+      </div>
+      <div class="detail-speed">
+        <span>Horsepower:</span> {{car.horsePower}} mph
+      </div>
+      <div class="detail-price">
+        <span>Cost:</span> ${{car.price}}
+      </div>
+      <div class="detail-model">
+        <span>Model:</span> {{car.model}}
+      </div>
+    </div>
+  </article>
+{{/each}}
 
 {{outlet}}
