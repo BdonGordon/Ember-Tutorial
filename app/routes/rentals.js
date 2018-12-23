@@ -6,6 +6,33 @@ export default Route.extend({
   */
   model() {
     return [
+      {
+        id: 1,
+        title: 'Genesis Coupe',
+        model: 2018,
+        company: 'Hyundai',
+        horsePower: 220,
+        price: 23000,
+        image: '../../public/genesis.jpg'
+      },
+      {
+        id: 2,
+        title: 'Lamborghini Merci',
+        model: 2018,
+        company: 'Lamborghini',
+        horsePower: 320,
+        price: 400000,
+        image: '../../public/lambo.jpg'
+      },
+      {
+        id: 3,
+        title: 'Porsche 911',
+        model: 2017,
+        company: 'Porsche',
+        horsePower: 340,
+        price: 530000,
+        image: '../../public/porsche.jpg'
+      }
     ];
   }
 });

@@ -8,7 +8,6 @@ export default function () {
   this.get('/rentals', function () {
     return {
       data: [{
-        {
           id: 1,
           title: 'Genesis Coupe',
           model: 2018,
@@ -35,7 +34,7 @@ export default function () {
           price: 530000,
           image: '../../public/porsche.jpg'
         }
-      }]
+      ]
     };
   });
 }
