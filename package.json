@@ -57,5 +57,9 @@
   "bugs": {
     "url": "https://github.com/BdonGordon/Ember-Tutorial/issues"
   },
-  "homepage": "https://github.com/BdonGordon/Ember-Tutorial#readme"
+  "homepage": "https://github.com/BdonGordon/Ember-Tutorial#readme",
+  "dependencies": {
+    "ember-cli-sass": "^8.0.1",
+    "sass": "^1.15.2"
+  }
 }

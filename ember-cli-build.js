@@ -1,9 +1,14 @@
 'use strict';
 
+var nodeSass = require('sass');
+
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    sassOptions: {
+      implementation: nodeSass
+    },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,

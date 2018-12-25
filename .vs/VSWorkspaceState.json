@@ -3,8 +3,10 @@
     "",
     "\\app",
     "\\app\\components",
-    "\\app\\templates",
-    "\\app\\templates\\components"
+    "\\app\\routes",
+    "\\app\\styles",
+    "\\app\\templates"
   ],
+  "SelectedNode": "\\app\\templates\\application.hbs",
   "PreviewInSolutionExplorer": false
 }

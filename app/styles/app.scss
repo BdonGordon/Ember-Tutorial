@@ -1,0 +1,93 @@
+.container {
+  max-width: 1024px;
+  min-height: 100vh;
+  background: #f9f9f9;
+  margin: 0 auto;
+}
+
+.menu {
+  height: 4em;
+  background-color: #677ae4;
+  background-color: #05526A;
+  background-color: #e46855;
+  padding-left: 12px;
+}
+
+.menu h1 {
+  color: white;
+}
+
+.menu h1 em {
+  position: relative;
+  left: -2px;
+}
+
+.menu a,
+.menu .links {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.menu .links {
+  padding: 0 21px;
+}
+
+.menu-about {
+  margin-right: 22px;
+}
+
+.listing {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  padding: 16px;
+  background-color: #cecece;
+  margin-bottom: 12px;
+  border: 1px solid black;
+}
+
+.detail-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-image a.image.wide {
+  flex: 100%;
+  flex-grow: 3;
+  max-width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+.details {
+  display: flex;
+}
+
+.listing img {
+  width: 220px;
+  margin-right: 30px;
+}
+
+.detail-car {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.detail-car span {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.detail-price {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.detail-price p {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+}

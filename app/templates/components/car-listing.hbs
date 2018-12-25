@@ -1,0 +1,26 @@
+{{!- Here, you can see that we are referring to an object called "rental" along with its properties.--}}
+{{!- The rental object is passed into this component in rentals.hbs. Refer to that file to see--}}
+
+<article class="listing">
+  {{!-- We are going to use the boolean, isWide (set in car-listing.js) to determine whether to expand the image or not when the user clicks it --}}
+  <a class="image {{if isWide "wide"}}" role="button" onclick={{action "toggleImageSize"}}>
+    <div class="detail-image">
+      <img src={{rental.image}} alt="">
+      <small>View</small>
+    </div>
+  </a>
+  <div class="details">
+    <div class="detail-car">
+      <h3>{{rental.title}} {{rental.model}}</h3>
+      <div>
+        <span>Company:</span> {{rental.company}}
+      </div>
+      <div>
+        <span>Horse Power:</span> {{rental.horsePower}} mph
+      </div>
+    </div>
+    <div class="detail-price">
+      <p>$ {{rental.price}}</p>
+    </div>
+  </div>
+</article>
