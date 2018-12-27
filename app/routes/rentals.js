@@ -13,7 +13,8 @@ export default Route.extend({
         company: 'Hyundai',
         horsePower: 220,
         price: 23000,
-        image: '/assets/images/genesis.jpg'
+        image: '/assets/images/genesis.jpg',
+        carType: "Luxury"
       },
       {
         id: 2,
@@ -22,7 +23,8 @@ export default Route.extend({
         company: 'Lamborghini',
         horsePower: 320,
         price: 400000,
-        image: '/assets/images/lambo.jpg'
+        image: '/assets/images/lambo.jpg',
+        carType: "Sports"
       },
       {
         id: 3,
@@ -31,7 +33,8 @@ export default Route.extend({
         company: 'Porsche',
         horsePower: 340,
         price: 530000,
-        image: '/assets/images/porsche.jpg'
+        image: '/assets/images/porsche.jpg',
+        carType: "Sports"
       }
     ];
   }
