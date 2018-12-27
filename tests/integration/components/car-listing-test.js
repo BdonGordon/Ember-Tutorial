@@ -1,10 +1,14 @@
 import { module, test } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { setupRenderingTest, setupApplicationTest } from 'ember-qunit';
+import { render, click, currentURL, visit } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
+import setupMirage from 'ember-cli-mirage/addon-test-support/setup-mirage';
 
 module('Integration | Component | car-listing', function(hooks) {
   setupRenderingTest(hooks);
+
+  setupApplicationTest(hooks);
+  setupMirage(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');

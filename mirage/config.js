@@ -5,34 +5,45 @@ export default function () {
 
   //WE have configured Mirage so that whenever Ember Data makes a GET request to /api/rentals, it will return this JS object as JSON
   //(without network requests actually made obviously)
-  this.get('/rentals', function () {
+  this.get('/cars', function () {
     return {
+      //pay attention to how the format of each object of the data is. particularly, the {attributes: {}}
       data: [{
-          id: 1,
+        type: 'cars',
+        id: 1,
+        attributes: {
           title: 'Genesis Coupe',
           model: 2018,
           company: 'Hyundai',
-          horsePower: 220,
+          horsepower: 220,
           price: 23000,
-          image: '../../public/genesis.jpg'
-        },
-        {
+          image: '/assets/images/genesis.jpg',
+          cartype: "Luxury"
+        }
+      }, {
+          type: 'cars',
           id: 2,
-          title: 'Lamborghini Merci',
-          model: 2018,
-          company: 'Lamborghini',
-          horsePower: 320,
-          price: 400000,
-          image: '../../public/lambo.jpg'
-        },
-        {
+          attributes: {
+            title: 'Lamborghini Merci',
+            model: 2018,
+            company: 'Lamborghini',
+            horsepower: 320,
+            price: 400000,
+            image: '/assets/images/lambo.jpg',
+            cartype: "Sports"
+          }
+        }, {
+          type: 'cars',
           id: 3,
-          title: 'Porsche 911',
-          model: 2017,
-          company: 'Porsche',
-          horsePower: 340,
-          price: 530000,
-          image: '../../public/porsche.jpg'
+          attributes: {
+            title: 'Porsche 911',
+            model: 2017,
+            company: 'Porsche',
+            horsepower: 340,
+            price: 530000,
+            image: '/assets/images/porsche.jpg',
+            cartype: "Sports"
+          }
         }
       ]
     };
