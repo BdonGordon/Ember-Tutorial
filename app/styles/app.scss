@@ -52,7 +52,7 @@
   flex-direction: column;
 }
 
-.detail-image a.image.wide {
+.listing a.image.wide {
   flex: 100%;
   flex-grow: 3;
   max-width: 100%;
@@ -60,13 +60,21 @@
   z-index: 999;
 }
 
-.details {
-  display: flex;
+.narrow {
+  width: 220px;
+  margin-right: 16px;
+  height: 80%;
 }
 
-.listing img {
-  width: 220px;
-  margin-right: 30px;
+.wide {
+  width: 440px;
+  height: 95%;
+  z-index: 999;
+  margin-right: 16px;
+}
+
+.details {
+  display: flex;
 }
 
 .detail-car {

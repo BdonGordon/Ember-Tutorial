@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\components",
-    "\\app\\routes",
     "\\app\\styles",
-    "\\app\\templates"
+    "\\app\\templates",
+    "\\app\\templates\\components"
   ],
-  "SelectedNode": "\\app\\templates\\application.hbs",
+  "SelectedNode": "\\app\\styles\\app.scss",
   "PreviewInSolutionExplorer": false
 }

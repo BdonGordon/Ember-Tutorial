@@ -3,11 +3,8 @@
 
 <article class="listing">
   {{!-- We are going to use the boolean, isWide (set in car-listing.js) to determine whether to expand the image or not when the user clicks it --}}
-  <a class="image {{if isWide "wide"}}" role="button" onclick={{action "toggleImageSize"}}>
-    <div class="detail-image">
-      <img src={{rental.image}} alt="">
-      <small>View</small>
-    </div>
+  <a role="button" onclick={{action "toggleImageSize"}}>
+    <img src={{rental.image}} alt="" class="{{if isWide "wide" "narrow"}}">
   </a>
   <div class="details">
     <div class="detail-car">

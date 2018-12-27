@@ -6,7 +6,7 @@
 
 {{!-- Here, we are looping through the rentals' model that was defined in the rentals.js--}}
 {{#each model as |car|}}
-  {{car-listing rental=car}}
+  {{car-listing rental=car}}  {{!--This is where we are calling the component, car-listing. Hype--}}
 {{/each}}
 
 {{outlet}}

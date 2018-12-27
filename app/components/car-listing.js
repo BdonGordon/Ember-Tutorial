@@ -6,7 +6,6 @@ export default Component.extend({
   //this action will be triggered in our .hbs file. Refer there to see
   actions: {
     toggleImageSize() {
-      console.log("Pressed: " + this.isWide);
       this.toggleProperty('isWide');
     }
   }
